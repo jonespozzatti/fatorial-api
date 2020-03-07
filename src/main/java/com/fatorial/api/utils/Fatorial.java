@@ -24,4 +24,17 @@ public class Fatorial {
 
 
 	}
+	
+	 public static int fatorial(int num) {
+     
+	        if (num <= 1) {
+
+	            return 1;
+
+	        } else {
+	            return fatorial(num - 1) * num;
+
+	        }
+
+	    }
 }

@@ -19,6 +19,12 @@ public class FatorialController {
 	
 	@GetMapping(value = "/{valor}")
 	public Integer fatorial(@PathVariable("valor") Integer valor) throws Exception{
-		return fatorialService.calcularService(valor);
+		return fatorialService.calcularFatorial(valor);
 	}
+	
+	@GetMapping(value = "/{valor}/1")
+	public Integer fatorialRecursivo(@PathVariable("valor") Integer valor) throws Exception{
+		return fatorialService.calcularFatorialRecursivo(valor);
+	}
+	
 }

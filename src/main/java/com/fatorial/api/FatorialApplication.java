@@ -22,7 +22,7 @@ public class FatorialApplication {
 	@Bean
 	public CommandLineRunner commandLineRunner() {
 		return args -> {
-			System.out.println(fatorialService.calcularService(4));
+			System.out.println(fatorialService.calcularFatorialRecursivo(4));
 		};
 	}
 	
